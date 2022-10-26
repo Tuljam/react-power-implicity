@@ -1,30 +1,49 @@
+@import "../../mixins";
+
 .navbar {
   &__wrap {
     border: 1px solid red;
-    width: 100%;
+    // width: 100%;
     height: 112px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+
+    @include mediaMobile {
+      height: 100px;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
-        &__logo--wrap{
-        align-self: center;
-        justify-self: center;
+  &__logo--wrap {
+    align-self: center;
+    justify-self: left;
+    width: 100px;
 
+    @include mediaTablet {
+      width: 80px;
     }
 
+    @include mediaMobile {
+      width: 70px;
+    }
+  }
+
   &__navigation {
-    // justify-self: center;
+    justify-self: center;
     align-self: center;
+
+    @include mediaMobile {
+      display: none;
+    }
 
     &-link {
       color: #a0a3a7;
       margin-right: 65px;
     }
   }
+
   &__button {
     display: block;
-    margin-right: 15px;
     padding: 15px 25px;
     justify-self: right;
     align-self: center;
@@ -39,33 +58,32 @@
     box-shadow: 0px 4px 50px rgba(37, 37, 37, 0.08);
     transition: all 0.3s ease-in-out;
 
-    &:hover{
-      background:#8b7d7d;
+    &:hover {
+      background: #8b7d7d;
       display: none;
+    }
 
+    @include mediaTablet {
+      padding: 10px 15px;
+    }
+
+    @include mediaMobile {
+      display: none;
     }
   }
-    &__burger {
-      outline: none;
-      width: 25px;
-      height: 30px;
-      background: transparent;
-      //display: none;
-      // @include mediaMobile {
-        // display: block;
-        // как установить класс для svg???? т.к. ниже нужно указать имеено класс для svg
-        // &:active{.navbar__burger {
-        //   path {fill:grey;}
-        // }}
+
+  &__burger {
+    display: none;
+    outline: none;
+    width: 75px;
+    height: 50px;
+    background: transparent;
+    padding: 0;
+
+    @include mediaMobile {
+      display: block;
+      justify-self: right;
+      align-self: center;
     }
+  }
 }
-
-//mediaTable
-// @media screen and (max-width: 1200px) {
-//          width: 1024px;
-//         }
-
-//mediaMobile
-// @media screen and (max-width: 768px) {
-//          width: 100%;
-//        }

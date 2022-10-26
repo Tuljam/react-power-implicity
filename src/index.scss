@@ -1,14 +1,13 @@
-
-
+@import './mixins';
 
 body {
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(to right, #FC4060, #8061FD) no-repeat;
-    background-size: contain;
-    font-family: Arial, Helvetica, sans-serif ;
-        margin: 0;
-        padding: 0
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #fc4060, #8061fd) no-repeat;
+  background-size: contain;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 h1,
 h2,
@@ -17,13 +16,12 @@ h4,
 h5,
 h6,
 p {
-    padding: 0;
-    margin: 0;
-    font-weight: normal;
-    font-style: normal;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-style: normal;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-

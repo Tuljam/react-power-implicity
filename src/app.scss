@@ -1,17 +1,24 @@
-@import "./components/Nav/navbar.scss";
-@import "./components/Slider/slider.scss";
+@import "./mixins";
 
 .wrapper {
+  @include container;
+  width: 80%;
   height: 1010px;
-  max-width: 1410px;
-  margin: 0 auto;
-  padding: 0 15px;
+  // max-width: 1410px;
+  // margin: 0 auto;
+  // padding: 0 15px;
 
-  border: 2px solid rgb(226, 147, 43);
+  @include mediaMobile {
+    height: 1010px;
+  }
+
+  border: 5px solid rgb(37, 196, 16);
 
   display: grid;
-  grid-template-rows: 0.5fr 2fr;
-  row-gap: 185px;
+  grid-template-rows: 1fr 2fr 1fr;
+  @include mediaMobile {
+    grid-template-rows: 0.5fr 2fr;
+  }
 
   background: linear-gradient(
     180deg,
@@ -20,45 +27,3 @@
   );
   border-radius: 32px;
 }
-
-// 
-//     @media (max-width: 1410px) {
-//         width: 1280px;
-//     }
-
-//     @media (max-width: 1200px) {
-//         width: 1024px;
-//     }
-//     @media (max-width: 992px) {
-   //         width: 771px;????????
-   //     }
-//     @media (max-width: 768px) {
-//         width: 771px;
-//     }
-
-//     @media (max-width: 568px) {
-//         width: 100%;
-//     }
-// }
-
-
-// @mixin mediaMobile {
-//     @media screen and (max-width: 767px) {
-//         @content;
-//     }
-// }
-    // @mixin mediaTablet {
-  //   @media screen and (max-width: 1199px) {
-  //     @content;
-  //   }
-  // }
-
-
-
-// mediaTable
-    // @media screen and (max-width: 1200px) {
-    //          width:1024px
-// mediaMobile
-            // @media screen and (max-width: 768px) {
-            //          width: 100%;
-            //        }
