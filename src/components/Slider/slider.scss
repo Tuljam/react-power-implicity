@@ -6,8 +6,8 @@
   margin: 0 auto;
 
   display: grid;
-  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr;
-  // gap: 35px;
+  grid-template-rows: 1fr 0.5fr 1fr 1fr;
+  gap: 20px;
 
   @include mediaTablet {
     width: 525px;
@@ -16,6 +16,7 @@
 
   @include mediaMobile {
     width: 310px;
+
   }
 
   &__title {
