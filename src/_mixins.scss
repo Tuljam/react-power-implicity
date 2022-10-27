@@ -10,20 +10,17 @@
   }
 
   @media (max-width: 768px) {
-    width: 770px;
+    width: 640px;
   }
 
-  // @media (min-width: 425px) and (max-width: 568) {
-  //   width: 100%;
-  // }
 
   @media (max-width: 568px) {
-    width: 375px;
-    // height: 100%;
+    width: 100%;
   }
 
+
   @media (max-width: 375px) {
-    width: 80%;
+    width: 100%;
   }
 }
 
