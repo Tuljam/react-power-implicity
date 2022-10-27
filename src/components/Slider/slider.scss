@@ -2,12 +2,12 @@
 
 .slider {
   width: 600px;
-  height: 485px;
+  height: 430px;
   margin: 0 auto;
 
   display: grid;
-  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 1fr;
-  gap: 50px;
+  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr;
+  // gap: 35px;
 
   @include mediaTablet {
     width: 525px;

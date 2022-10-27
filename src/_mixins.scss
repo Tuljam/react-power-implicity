@@ -1,5 +1,6 @@
 @mixin container {
-  width: 1200px;
+  width: 1200;
+  height: 1010px;
   margin: 0 auto;
   padding: 0 15px;
 
@@ -9,7 +10,7 @@
   }
 
   @media (max-width: 768px) {
-    width: 620px;
+    width: 770px;
   }
 
   // @media (min-width: 425px) and (max-width: 568) {
@@ -17,20 +18,20 @@
   // }
 
   @media (max-width: 568px) {
-    width: 380px;
-    height: 100%;
+    width: 375px;
+    // height: 100%;
   }
 
   @media (max-width: 375px) {
     width: 80%;
   }
 }
+
 @mixin mediaTablet {
   @media screen and (max-width: 1023px) {
     @content;
   }
 }
-
 @mixin mediaMobile {
   @media screen and (max-width: 767px) {
     @content;

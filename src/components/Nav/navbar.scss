@@ -6,6 +6,7 @@
     height: 112px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+   margin-bottom: 55px;
 
     @include mediaMobile {
       height: 100px;
