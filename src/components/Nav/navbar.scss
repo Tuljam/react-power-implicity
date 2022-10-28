@@ -5,16 +5,10 @@
     height: 112px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    
-  //  margin-bottom: 80px;
 
-    @include mediaTablet {
-        // margin-bottom: 70px;
-      }
     @include mediaMobile {
       height: 100px;
       grid-template-columns: 1fr 1fr;
-      // margin-bottom: 55px;
     }
   }
 

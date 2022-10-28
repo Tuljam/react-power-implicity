@@ -5,7 +5,7 @@
   width: 80%;
   height: 90%;
   display: grid;
-  grid-template-rows: 112px 1fr ;
+  grid-template-rows: 112px 1fr;
   row-gap: 70px;
 
   background: linear-gradient(
@@ -21,6 +21,5 @@
 
   @include mediaMobile {
     row-gap: 45px;
-
   }
 }
