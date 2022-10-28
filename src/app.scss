@@ -4,9 +4,9 @@
   @include container;
   width: 80%;
   height: 90%;
-  // display: grid;
-  // grid-template-rows: 112px 1fr ;
-  // row-gap: 170px;
+  display: grid;
+  grid-template-rows: 112px 1fr ;
+  row-gap: 70px;
 
   background: linear-gradient(
     180deg,
@@ -16,12 +16,11 @@
   border-radius: 32px;
 
   @include mediaTablet {
-    height: 620px;
+    row-gap: 55px;
   }
 
   @include mediaMobile {
-    width: 315px;
-    height: 600px;
-    grid-template-rows: 0.5fr 2fr;
+    row-gap: 45px;
+
   }
 }
