@@ -2,6 +2,7 @@
 
 .navbar {
   &__wrap {
+    width: 100%;
     height: 112px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
