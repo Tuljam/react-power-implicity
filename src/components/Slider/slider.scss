@@ -2,7 +2,7 @@
 
 .slider {
   width: 600px;
-  height: 430px;
+  height: 410px;
   margin: 0 auto;
 
   display: grid;
@@ -10,12 +10,14 @@
   gap: 20px;
 
   @include mediaTablet {
+    // grid-template-rows:  0.5fr 1fr;
     width: 525px;
-    height: 450px;
+    height: 415px;
   }
 
   @include mediaMobile {
     width: 310px;
+    height: 400px;
   }
 
   &__title {

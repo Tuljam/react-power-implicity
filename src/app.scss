@@ -5,8 +5,8 @@
   width: 80%;
   height: 90%;
   display: grid;
-  grid-template-rows: 112px 1fr;
-  row-gap: 70px;
+  grid-template-rows: 0.5fr 1fr;
+  row-gap: 25px;
 
   background: linear-gradient(
     180deg,
@@ -14,12 +14,4 @@
     #22282e 101.33%
   );
   border-radius: 32px;
-
-  @include mediaTablet {
-    row-gap: 55px;
-  }
-
-  @include mediaMobile {
-    row-gap: 45px;
-  }
 }
