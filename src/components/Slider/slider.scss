@@ -80,11 +80,7 @@
       border-image: rgb(59, 22, 22);
       cursor: pointer;
     }
-    @include mediaMobile {
-      width: 160px;
-      height: 45px;
-      padding: 10px 30px;
-    }
+ 
   }
 
   &__dots {
