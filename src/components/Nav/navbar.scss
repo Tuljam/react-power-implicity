@@ -13,7 +13,6 @@
     @include mediaMobile {
       height: 100px;
       grid-template-columns: 1fr 1fr;
-      padding: 10px;
     }
   }
 
@@ -24,7 +23,6 @@
   }
 
   &__navigation {
-   
     justify-self: center;
     align-self: center;
 
@@ -61,6 +59,7 @@
 
     @include mediaTablet {
       padding: 10px 15px;
+      width: 145px;
     }
 
     @include mediaMobile {
