@@ -1,0 +1,37 @@
+@mixin container {
+  width: 1200px;
+  height: 1010px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+    height: 90%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    height: 90%;
+  }
+
+  @media screen and (max-width: 568px) {
+    width: 80%;
+    height: 90%;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 80%;
+    height: 90%;
+  }
+}
+
+@mixin mediaTablet {
+  @media screen and (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin mediaMobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}

@@ -1,0 +1,25 @@
+@import "./mixins";
+
+.wrapper {
+  @include container;
+  width: 80%;
+  height: 90%;
+  display: grid;
+  grid-template-rows: 20% 78%;
+  row-gap: 10px;
+
+  @include mediaTablet {
+    row-gap: 45px;
+  }
+  @include mediaMobile {
+    row-gap: 50px;
+    grid-template-rows: 20% 70%;
+  }
+
+  background: linear-gradient(
+    180deg,
+    rgba(43, 34, 21, 0.8) -1.22%,
+    #22282e 101.33%
+  );
+  border-radius: 32px;
+}
