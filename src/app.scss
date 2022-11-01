@@ -8,9 +8,6 @@
   grid-template-rows: 20% 78%;
   row-gap: 10px;
 
-  @include mediaTablet {
-    row-gap: 45px;
-  }
   @include mediaMobile {
     row-gap: 50px;
     grid-template-rows: 20% 70%;

@@ -1,28 +1,30 @@
 @import "../../mixins";
 
 .navbar {
-  &__wrap {
+
     width: 100%;
     height: 112px;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-self: center;
+    justify-self: left;
+
     @include mediaTablet {
       height: 90px;
+
     }
 
     @include mediaMobile {
       height: 100px;
       grid-template-columns: 1fr 1fr;
     }
-  }
 
-  &__logo--wrap {
-    align-self: center;
-    justify-self: left;
-    width: 100px;
-  }
+ @include mediaApple {
+   height: 100px;
+   grid-template-columns: 1fr 1fr;
+ }
 
-  &__navigation {
+  &__list {
     justify-self: center;
     align-self: center;
 
@@ -30,11 +32,12 @@
       display: none;
     }
 
-    &-link {
+  }
+
+    &__link {
       color: #a0a3a7;
       margin-right: 65px;
     }
-  }
 
   &__button {
     display: block;
@@ -54,7 +57,7 @@
 
     &:hover {
       background: #8b7d7d;
-      display: none;
+        display: none;
     }
 
     @include mediaTablet {
@@ -80,5 +83,14 @@
       justify-self: right;
       align-self: center;
     }
+  }
+  .logo {
+    align-self: center;
+    justify-self: left;
+
+@include mediaMobile {
+    width: 90%;
+  }
+
   }
 }
